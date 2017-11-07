@@ -1,0 +1,11 @@
+$creds = Get-Credential
+
+Connect-SPOService -Url https://<TENANCY>-admin.sharepoint.com/ -Credential $creds
+
+Set-SPOTenant -PublicCdnEnabled $true
+
+Set-SPOTenant -PublicCdnAllowedFileTypes "CSS,EOT,GIF,ICO,JPEG,JPG,JS,MAP,PNG,SVG,TTF,WOFF,TXT"
+
+New-SPOPublicCdnOrigin -Url "https://<TENANCY>.sharepoint.com/sites/<SITE>/siteassets/cdn"
+
+Get-SPOPublicCdnOrigins
