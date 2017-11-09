@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "notts-dev-workshop-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nottsDevWorkshop/NottsDevWorkshopWebPart.js",
+          "manifest": "./src/webparts/nottsDevWorkshop/NottsDevWorkshopWebPart.manifest.json"
+        }
+      ]
+    },
+    "sp-fx-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFx/SpFxWebPart.js",
+          "manifest": "./src/webparts/spFx/SpFxWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NottsDevWorkshopWebPartStrings": "lib/webparts/nottsDevWorkshop/loc/{locale}.js",
+    "SpFxWebPartStrings": "lib/webparts/spFx/loc/{locale}.js"
+  }
+}

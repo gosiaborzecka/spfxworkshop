@@ -1,0 +1,11 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "notts-dev-wrokshop-master-client-side-solution",
+    "id": "840dbfa4-38c5-4d3d-9d98-64fa27dc41f1",
+    "version": "1.0.0.1"
+  },
+  "paths": {
+    "zippedPackage": "solution/notts-dev-wrokshop-master.sppkg"
+  }
+}
